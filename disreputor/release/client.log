@@ -1,0 +1,28 @@
+connected
+request order
+shotscreen
+send ok,img len=79079
+request order
+shotscreen
+send ok,img len=96643
+request order
+shotscreen
+send ok,img len=120501
+request order
+shotscreen
+send ok,img len=138349
+request order
+shotscreen
+send ok,img len=173093
+request order
+shotscreen
+send ok,img len=208885
+connect reset, trying again in 3 seconds.
+connect reset, trying again in 3 seconds.
+connect reset, trying again in 3 seconds.
+connect reset, trying again in 3 seconds.
+connect reset, trying again in 3 seconds.
+connected
+request order
+shotscreen
+send ok,img len=78993

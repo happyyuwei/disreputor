@@ -57,14 +57,26 @@ public class Disreputor {
                 //ip and port
                 String ip = args[1];
                 int port = Integer.parseInt(args[2]);
-
-                //client window
-                ClientWindow c = new ClientWindow();
-                //client net
-                ClientNet net = new ClientNet();
-                net.setWindow(c);
-                //start client
-                net.run(ip, port);
+                while (true) {
+                    //所有错误会在这里捕获并重新开始
+                    try {
+                        //client window
+                        ClientWindow c = new ClientWindow();
+                        //client net
+                        ClientNet net = new ClientNet();
+                        net.setWindow(c);
+                        //start client
+                        net.run(ip, port);
+                    } catch (Exception exc) {
+                        exc.printStackTrace();
+                    }
+                    //3秒重新开始
+                    try {
+                        Thread.sleep(3000);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
             }
         }
 
