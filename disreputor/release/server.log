@@ -1,10 +1,2 @@
 start server, port=6677
 accept client
-msg len=79013
-head start=0
-start reveiving image, len=78993
-head len=20
-part=78993
-current received len=78993
-receive ok
-client discunnect
